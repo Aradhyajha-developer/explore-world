@@ -780,11 +780,11 @@ body {
 @media(max-width:768px){
 
     .logo{
-        font-size:1.3rem !important;
-        text-align:center;
-        width:100%;
-        white-space:normal;
-    }
+    font-size:1.2em !important;
+    text-align:center;
+    width:100%;
+    white-space:nowrap;
+}
 
     .navbar{
         display:flex;
