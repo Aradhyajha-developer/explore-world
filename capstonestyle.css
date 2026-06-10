@@ -698,3 +698,42 @@ summary::-webkit-details-marker{
     margin:8px 0;
 }
 /*comment */
+/* --- FIX FOR MOBILE RESPONSIVENESS --- */
+
+@media(max-width: 768px) {
+    /* Sections ki badi margins ko chhota karna */
+    .section:nth-of-type(2),
+    .why-us,
+    .testimonial-section,
+    .section:last-of-type {
+        margin: 10px !important;
+        padding: 20px 10px !important;
+    }
+
+    /* Hero heading ko chhota karna */
+    .hero h1 {
+        font-size: 1.8rem !important;
+    }
+
+    /* Grid layout ko 1 column mein fix karna */
+    .destination-grid {
+        grid-template-columns: 1fr !important;
+        gap: 15px !important;
+    }
+
+    /* Stats aur containers ki width fix karna */
+    .stats, .why-container, .testimonial-container {
+        flex-direction: column !important;
+        align-items: center !important;
+        gap: 15px !important;
+    }
+
+    .why-card, .testimonial {
+        width: 90% !important; /* Mobile par width screen ke hisaab se */
+    }
+}
+
+/* Scroll issue se bachne ke liye */
+body {
+    overflow-x: hidden;
+}
