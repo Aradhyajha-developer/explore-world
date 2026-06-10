@@ -737,3 +737,35 @@ summary::-webkit-details-marker{
 body {
     overflow-x: hidden;
 }
+/* --- PERFECT MOBILE RESPONSIVE FIXES --- */
+
+@media (max-width: 768px) {
+    /* Navbar ko stack karne ke liye */
+    .navbar {
+        flex-direction: column !important;
+        padding: 15px !important;
+        height: auto !important;
+    }
+
+    .navbar ul {
+        flex-direction: column !important;
+        gap: 10px !important;
+        margin-top: 15px !important;
+    }
+
+    /* Hero section ki height adjust */
+    .hero {
+        height: 60vh !important;
+    }
+
+    /* Baki sections ki margin fix */
+    .section, .why-us, .testimonial-section {
+        margin: 10px !important;
+        padding: 20px 10px !important;
+    }
+
+    /* Grid layout */
+    .destination-grid {
+        grid-template-columns: 1fr !important;
+    }
+}
